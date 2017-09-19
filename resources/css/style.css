@@ -12,6 +12,8 @@ html {
   width: 100%;
   height: 4rem;
   background-color: white;
+  justify-content: space-between;
+  border-bottom: 2px solid lightgray;
 }
 /* Logo */
 
@@ -22,10 +24,10 @@ html {
     height: 2rem;
 }
 
-.header .logo h1 {
+.header .logo h5 {
     font-weight: bold;
 }
-.header .logo h1 span {
+.header .logo h5 span {
     font-weight: normal;
     color: gray;
 }
@@ -74,13 +76,13 @@ html {
   width: 40%;
 }
 
-.banner-text h2 {
+.banner-text h1 {
   font-size: 2rem;
   font-weight: bold;
   margin: 2rem 1.5rem 2rem 0;
 }
 
-.banner-text h3 {
+.banner-text h2 {
   font-size: 1.5rem;
 }
 
@@ -96,4 +98,86 @@ html {
   background-color: #404040;
   color: white;
   border-radius: 1px;
+}
+
+/*Practice Content Section*/
+.content {
+  display: flex;
+  margin: 2rem 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.content-left {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+.content-left .image,
+.content-left .image img,
+.content-left .text {
+  width: 100%;
+}
+
+.content-left h1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+.content-left p {
+  line-height: 1.4;
+  margin: 2rem 0;
+  padding-right: 1.5rem;
+}
+#quote {
+  margin-bottom: 2rem;
+  padding-right: 1.5rem;
+}
+.content-right {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ .content-right-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.orientation {
+  border-bottom: 5px solid lightgray;
+  width: 100%;
+}
+.orientation,
+.campus,
+.lecture {
+  display: flex;
+}
+.content-right .image {
+  width: 35%;
+  height: auto;
+}
+.content-right .image img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+
+}
+.content-right .text {
+  margin-right: .5rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-right h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.content-right p {
+  margin: .5rem;
+}
+.content-right a {
+  text-decoration: none;
+  color: black;
 }
