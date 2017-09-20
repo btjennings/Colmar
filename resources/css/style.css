@@ -229,3 +229,85 @@ html {
   margin: .5rem 0;
   font-size: 1rem;
 }
+
+/*Thesis Exhibit Section*/
+.thesis {
+  margin: 2rem 1.5rem;
+  width: 100%;
+  position: relative;
+}
+.thesis h1 {
+  font-size: 2rem;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+}
+.left-thesis {
+  width: 60%;
+  padding-right: 1.5rem;
+}
+video,
+.left-thesis .text {
+  width: 100%;
+}
+
+.left-thesis h3 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  padding-right: 1.5rem;
+}
+.left-thesis p {
+  line-height: 1.4;
+  margin: 2rem 0;
+  padding-right: 1.5rem;
+}
+
+.right-thesis {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+ /*.content-right-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}*/
+.fisma {
+  border-bottom: 5px solid lightgray;
+  width: 100%;
+}
+.fisma,
+.nowthen {
+  display: flex;
+}
+.thesis-image {
+  max-width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+.thesis-image img {
+  width: 100%;
+  height: auto;
+  margin: 1rem;
+
+}
+.thesis-text {
+  margin-right: .5rem;
+  line-height: 1.4;
+  margin-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.right-thesis h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.right-thesis a {
+  text-decoration: none;
+  color: black;
+}
