@@ -3,6 +3,11 @@ html {
     font-size: 16px;
     font-family: Helvetica;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /*Header*/
 .header {
   z-index: 100;
@@ -101,29 +106,29 @@ html {
 }
 
 /*Practice Content Section*/
-.content {
+.practice {
   display: flex;
   margin: 2rem 1.5rem;
   width: 100%;
   position: relative;
 }
-.content-left {
+.practice-left {
   width: 60%;
   padding-right: 1.5rem;
 }
-.content-left .image,
-.content-left .image img,
-.content-left .text {
+.practice-left .image,
+.practice-left .image img,
+.practice-left .text {
   width: 100%;
 }
 
-.content-left h1 {
+.practice-left h1 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   padding-right: 1.5rem;
 }
-.content-left p {
+.practice-left p {
   line-height: 1.4;
   margin: 2rem 0;
   padding-right: 1.5rem;
@@ -132,14 +137,14 @@ html {
   margin-bottom: 2rem;
   padding-right: 1.5rem;
 }
-.content-right {
+.practice-right {
   width: 40%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
- .content-right-info {
+ .practice-right-info {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -154,18 +159,18 @@ html {
 .lecture {
   display: flex;
 }
-.content-right .image {
+.practice-right .image {
   max-width: 35%;
   height: auto;
   overflow: hidden;
 }
-.content-right .image img {
+.practice-right .image img {
   width: 100%;
   height: auto;
   margin: 1rem;
 
 }
-.content-right .text {
+.practice-right .text {
   margin-right: .5rem;
   line-height: 2;
   margin-left: 1.5rem;
@@ -173,12 +178,12 @@ html {
   flex-direction: column;
   justify-content: center;
 }
-.content-right h3 {
+.practice-right h3 {
   font-size: 1.5rem;
   font-weight: bold;
 }
 
-.content-right a {
+.practice-right a {
   text-decoration: none;
   color: black;
 }
