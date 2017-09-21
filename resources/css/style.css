@@ -15,6 +15,7 @@ html, body {
 
 h1 {
   font-weight: bold;
+  font-size: 2rem;
 }
 /*Header*/
 .header {
@@ -46,23 +47,23 @@ h1 {
 }
 /* Nav Menu */
 
-.header nav {
+nav.desktop {
     margin-right: 1.5rem;
     z-index: 1;
     display: flex;
     justify-content: flex-end;
 }
 
-.header nav a {
+.header nav.desktop a {
   margin-left: 1rem;
   text-decoration: none;
   color: #17202A;
 }
-.header nav a:hover  {
+.header nav.desktop a:hover  {
   font-weight: bold;
 
 }
-.header nav .mobile {
+.mobile {
     display: none;
 }
 
@@ -93,8 +94,6 @@ h1 {
 }
 
 .banner-text h1 {
-  font-size: 2rem;
-  font-weight: bold;
   margin: 2rem 1.5rem 2rem 0;
 }
 
@@ -140,7 +139,6 @@ h1 {
 .practice-left h1 {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  font-size: 2rem;
   padding-right: 1.5rem;
 }
 .practice-left p {
@@ -220,7 +218,6 @@ h1 {
 
 }
 .learning h1 {
-  font-size: 2rem;
   padding: 2rem 0 1rem 0;
   text-align: center;
 }
@@ -272,8 +269,7 @@ h1 {
   position: relative;
 }
 .thesis h1 {
-  font-size: 2rem;
-  padding: 2rem 0 1rem 0;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .left-thesis {
