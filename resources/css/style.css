@@ -1,13 +1,21 @@
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+</style>
+
 html {
     /*box-sizing: border-box;*/
     font-size: 16px;
-    font-family: Helvetica;
+
 }
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
+h1 {
+  font-weight: bold;
+}
 /*Header*/
 .header {
   z-index: 100;
@@ -16,9 +24,9 @@ html, body {
   align-items: center;
   width: 100%;
   height: 4rem;
-  background-color: white;
+  background-color: #FFFFFF;
   justify-content: space-between;
-  border-bottom: 2px solid lightgray;
+  border-bottom: 2px solid #D0D3D4;
 }
 /* Logo */
 
@@ -34,7 +42,7 @@ html, body {
 }
 .header .logo h5 span {
     font-weight: normal;
-    color: gray;
+    color: #707B7C;
 }
 /* Nav Menu */
 
@@ -48,13 +56,13 @@ html, body {
 .header nav a {
   margin-left: 1rem;
   text-decoration: none;
-  color: black;
+  color: #17202A;
 }
 .header nav a:hover  {
   font-weight: bold;
 
 }
-.header nav .menu {
+.header nav .mobile {
     display: none;
 }
 
@@ -64,7 +72,7 @@ html, body {
   display: flex;
   align-items: center;
   padding-top: 4rem;
-  background-color: gray;
+  background-color: #D0D3D4;
 }
 
 .banner-image {
@@ -103,13 +111,14 @@ html, body {
   padding: 1rem 0;;
   margin: 1.5rem 1.5rem 2rem 1rem;
   text-decoration: none;
-  background-color: #404040;
-  color: white;
+  background-color: #707B7C;
+  color: #FFFFFF;
   border-radius: 1px;
 }
-.banner .btn:hover {
-  background-color: red;
-  transition: background-color 200ms linear 50ms;
+.banner .btn:hover,
+.banner .btn:active {
+  background-color: #99A3A4;
+  transition: background-color 200ms ease-in 100ms;
 }
 /*Practice Content Section*/
 .practice {
@@ -157,7 +166,7 @@ html, body {
 }
 .orientation,
 .campus {
-  border-bottom: 5px solid lightgray;
+  border-bottom: 5px solid #D0D3D4;
   width: 100%;
 }
 .orientation,
@@ -168,8 +177,8 @@ html, body {
 .orientation:hover,
 .campus:hover,
 .lecture:hover {
-  background-color: lightgray;
-  transition: color 200ms linear 50ms;
+  background-color: #D0D3D4;
+  transition: color 200ms ease-in 100ms;
 }
 .practice-right .image {
   max-width: 35%;
@@ -197,17 +206,17 @@ html, body {
 
 .practice-right a {
   text-decoration: none;
-  color: blue;
+  color: #3364FF;
 }
 
 .practice-right a:hover {
   font-weight: bold;
-  transition: color 200ms linear 150ms;
+  transition: color 200ms ease-in 100ms;
 }
 
 /*Learning Section*/
 .learning {
-  background-color: gray;
+  background-color: #D0D3D4;
 
 }
 .learning h1 {
@@ -225,13 +234,14 @@ html, body {
 }
 .course {
   margin: 2rem;
-  background-color: white;
+  background-color: #FFFFFF;
   width: 30%;
   height: auto;
   padding-bottom: 1.5rem;
 }
-.course:hover {
-  border: 5px solid black;
+.course:hover,
+.course:active {
+  opacity: .65;
 }
 .course-image {
   height: auto;
@@ -294,13 +304,9 @@ video,
   flex-direction: column;
   justify-content: flex-start;
 }
- /*.content-right-info {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-}*/
+
 .fisma {
-  border-bottom: 5px solid lightgray;
+  border-bottom: 5px solid #D0D3D4;
   width: 100%;
 }
 .fisma,
@@ -309,8 +315,8 @@ video,
 }
 .fisma:hover,
 .nowthen:hover {
-  background-color: lightgray;
-  transition: color 200ms linear 50ms;
+  background-color: #D0D3D4;
+  transition: color 200ms ease-in 100ms;
 }
 .thesis-sections {
   display: flex;
@@ -342,17 +348,17 @@ video,
 
 .right-thesis a {
   text-decoration: none;
-  color: black;
+  color: #17202A;
 }
 /*Footer Section*/
 footer {
   padding: 1rem 1.5rem 3rem 1.5rem;
-  border-top: 1px solid lightgray;
+  border-top: 1px solid #D0D3D4;
   display: flex;
   justify-content: space-between;
 }
 
 footer a {
   text-decoration: none;
-  color: black;
+  color: #17202A;
 }
