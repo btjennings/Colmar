@@ -50,7 +50,10 @@ html, body {
   text-decoration: none;
   color: black;
 }
+.header nav a:hover  {
+  font-weight: bold;
 
+}
 .header nav .menu {
     display: none;
 }
@@ -104,7 +107,10 @@ html, body {
   color: white;
   border-radius: 1px;
 }
-
+.banner .btn:hover {
+  background-color: red;
+  transition: background-color 200ms linear 50ms;
+}
 /*Practice Content Section*/
 .practice {
   display: flex;
@@ -159,6 +165,12 @@ html, body {
 .lecture {
   display: flex;
 }
+.orientation:hover,
+.campus:hover,
+.lecture:hover {
+  background-color: lightgray;
+  transition: color 200ms linear 50ms;
+}
 .practice-right .image {
   max-width: 35%;
   height: auto;
@@ -185,7 +197,12 @@ html, body {
 
 .practice-right a {
   text-decoration: none;
-  color: black;
+  color: blue;
+}
+
+.practice-right a:hover {
+  font-weight: bold;
+  transition: color 200ms linear 150ms;
 }
 
 /*Learning Section*/
@@ -212,6 +229,9 @@ html, body {
   width: 30%;
   height: auto;
   padding-bottom: 1.5rem;
+}
+.course:hover {
+  border: 5px solid black;
 }
 .course-image {
   height: auto;
@@ -285,6 +305,14 @@ video,
 }
 .fisma,
 .nowthen {
+  display: flex;
+}
+.fisma:hover,
+.nowthen:hover {
+  background-color: lightgray;
+  transition: color 200ms linear 50ms;
+}
+.thesis-sections {
   display: flex;
 }
 .thesis-image {
