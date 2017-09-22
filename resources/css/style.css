@@ -22,11 +22,17 @@ html, body {
   .course .course-image {
     display: none;
   }
-
-  header nav.mobile {
+  header .header {
+    display: block;
+  }
+.banner .banner-image, {
+  width: 100%;
+}
+  header .header nav.mobile {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: 4rem;
   }
   .banner {
     flex-wrap: wrap;
@@ -45,7 +51,6 @@ html, body {
     width: 100%;
   }
   body .practice {
-    padding: 1rem 1rem 2rem 1rem;
     margin: 0;
   }
   .practice .practice-right {
@@ -61,6 +66,7 @@ html, body {
   .practice-right .campus .image,
   .practice-right .lecture .image {
     max-width: 100%;
+    margin: 1rem 1rem 0 1rem;
   }
   .orientation .image .desktop,
   .campus .image .desktop,
@@ -73,11 +79,74 @@ html, body {
     display: block;
     width: 100%;
   }
-  footer .links {
+.practice-right .orientation .text  {
+    padding-left: 1rem;
+  }
+
+  body .learning {
+    background-color: #FFFFFF;
+  }
+  body .learning .courses {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .learning .courses .course {
+    margin: .5rem;
+    background-color: #D0D3D4;
+    width: 100%;
+    padding-bottom: 0;
+  }
+  .courses .course .course-text {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+  .course .course-text h3 {
+    font-size: 1.5rem;
+  }
+  .course .course-text p {
+    display: none;
+  }
+  .thesis-sections .left-thesis {
+    width: 100%;
+    height: auto;
+  }
+  .left-thesis h3,
+  .left-thesis p {
     display: none;
   }
   footer {
     padding: 1rem 0 1rem 1.5rem;
+    font-size: .75rem;
+  }
+  footer .links {
+    display: none;
+  }
+
+  .banner .btn:hover,
+  .banner .btn:active {
+    background-color: #99A3A4;
+    transition: background-color 200ms ease-in 100ms;
+  }
+  .orientation:hover,
+  .campus:hover,
+  .lecture:hover {
+    background-color: #D0D3D4;
+    transition:
+   }
+  .practice-right a:hover {
+    font-weight: bold;
+    transition: color 200ms ease-in 100ms;
+  }
+  .course:hover,
+  .course:active {
+    opacity: .65;
+  }
+  .fisma:hover,
+  .nowthen:hover {
+    background-color: #D0D3D4;
+    transition: color 200ms ease-in 100ms;
   }
 }
 h1 {
@@ -128,7 +197,6 @@ nav.desktop {
 }
 .header nav.desktop a:hover  {
   font-weight: bold;
-
 }
 .mobile {
     display: none;
