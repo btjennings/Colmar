@@ -13,6 +13,73 @@ html, body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+
+  header .header .logo,
+  header nav.desktop,
+  .practice .practice-left,
+  .thesis-sections .right-thesis,
+  .course .course-image {
+    display: none;
+  }
+
+  header nav.mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .banner {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .banner .banner-image {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  }
+  .banner .banner-text {
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    margin: 2rem 1rem;
+    width: 100%;
+  }
+  body .practice {
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 0;
+  }
+  .practice .practice-right {
+    width: 100%;
+  }
+  .practice-right .orientation,
+  .practice-right .campus,
+  .practice-right .lecture {
+    display: block;
+    width: 100%;
+  }
+  .practice-right .orientation .image,
+  .practice-right .campus .image,
+  .practice-right .lecture .image {
+    max-width: 100%;
+  }
+  .orientation .image .desktop,
+  .campus .image .desktop,
+  .lecture .image .desktop {
+    display: none;
+  }
+  .orientation .image .mobile,
+  .campus .image .mobile,
+  .lecture .image .mobile {
+    display: block;
+    width: 100%;
+  }
+  footer .links {
+    display: none;
+  }
+  footer {
+    padding: 1rem 0 1rem 1.5rem;
+  }
+}
 h1 {
   font-weight: bold;
   font-size: 2rem;
