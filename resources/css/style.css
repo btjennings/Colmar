@@ -3,10 +3,9 @@
 </style>
 
 html {
-    /*box-sizing: border-box;*/
     font-size: 16px;
-
 }
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -47,9 +46,17 @@ html, body {
     display: flex;
     flex-flow: wrap column;
     justify-content: center;
-    margin: 2rem 1rem;
+    margin: 0 1rem 2rem 1rem;
     width: 100%;
   }
+ .banner .banner-text h1 {
+   margin-top: 2rem;
+ }
+ .banner .banner-text .btn {
+   width: 100%;
+   margin: 1.5rem 0 0 0;
+   max-width: none;
+ }
   body .practice {
     margin: 0;
   }
@@ -66,7 +73,12 @@ html, body {
   .practice-right .campus .image,
   .practice-right .lecture .image {
     max-width: 100%;
-    margin: 1rem 1rem 0 1rem;
+    margin: 1rem;
+  }
+  .practice-right .orientation .image img,
+  .practice-right .campus .image img,
+  .practice-right .lecture .image img {
+    margin: 0;
   }
   .orientation .image .desktop,
   .campus .image .desktop,
@@ -79,8 +91,10 @@ html, body {
     display: block;
     width: 100%;
   }
-.practice-right .orientation .text  {
-    padding-left: 1rem;
+.practice-right .orientation .text,
+.practice-right .campus .text,
+.practice-right .lecture .text  {
+    margin-bottom: 3rem;
   }
 
   body .learning {
@@ -108,9 +122,11 @@ html, body {
   .course .course-text p {
     display: none;
   }
+
   .thesis-sections .left-thesis {
     width: 100%;
     height: auto;
+    padding-right: 0;
   }
   .left-thesis h3,
   .left-thesis p {
@@ -400,7 +416,7 @@ nav.desktop {
 /*Thesis Exhibit Section*/
 .thesis {
   margin: 2rem 1.5rem;
-  width: 100%;
+  max-width: 100%;
   position: relative;
 }
 .thesis h1 {
